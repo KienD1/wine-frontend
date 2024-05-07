@@ -36,7 +36,7 @@ const Home = () => {
             <div>
                 <Header />
             </div>
-            <div>
+            <div className='p-0'>
                 <BestSale />
             </div>
             <div>
