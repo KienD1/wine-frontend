@@ -27,7 +27,7 @@ const Footer = () => {
     <div className='bg-orange-300 py-4 shadow-md'>
       {showBackToTop && (
         <button
-          className="fixed bottom-12 right-12 bg-slate-100 hover:bg-orange-200 text-white font-bold py-2 px-2 rounded-full shadow-xl"
+          className="fixed bottom-10 right-10 bg-slate-100 hover:bg-orange-200 text-white font-bold py-2 px-2 rounded-full shadow-xl"
           onClick={scrollToTop}
         >
           <svg class="h-8 w-8 text-orange-400"
@@ -98,7 +98,7 @@ const ContactInfo = ({ icon, text, link }) => {
   };
   return (
     <span
-      className={`ml-5 flex items-center cursor-pointer hover:transform hover:scale-105 transition-transform duration-300 ease-in-out `}
+      className={`md:ml-5 flex items-center cursor-pointer  hover:transform hover:scale-105 transition-transform duration-300 ease-in-out ml-2  text-xs md:text-base`}
       onClick={handleClick}
     >
       {icons[icon] && React.cloneElement(svgs[icon], { className: icons[icon] + ' mr-2' })}

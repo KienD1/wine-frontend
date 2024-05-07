@@ -9,7 +9,7 @@ const Header = () => {
           <img className='w-6' src="/logo152.png" alt="HOKKAI Logo" />
           <span className='font-bold text-blue-600 ml-2'>HOKKAI</span>
         </div>
-        <div className='flex items-center md:mr-10'>
+        <div className='flex items-center md:mr-10 mr-4'>
           <ContactInfo icon='phone' text='0983196214' />
           <ContactInfo icon='zalo' text='Zalo' link='https://zalo.me' />
           <ContactInfo icon='facebook' text='Messenger' link='https://www.facebook.com/profile.php?id=100015175244438' />
@@ -19,7 +19,7 @@ const Header = () => {
   );
 }
 
-const ContactInfo = ({ icon, text, link }) => {
+const ContactInfo = ({ icon, text, link }) => { 
 
   const icons = {
     phone: 'h-5 w-5 text-green-500',
@@ -51,7 +51,7 @@ const ContactInfo = ({ icon, text, link }) => {
 
   return (
     <span
-      className={`ml-5 flex items-center cursor-pointer  hover:transform hover:scale-105 transition-transform duration-300 ease-in-out `}
+      className={`md:ml-5 flex items-center cursor-pointer  hover:transform hover:scale-105 transition-transform duration-300 ease-in-out ml-2  text-xs md:text-base`}
       onClick={handleClick}
     >
       {icons[icon] && React.cloneElement(svgs[icon], { className: icons[icon] + ' mr-2' })}
