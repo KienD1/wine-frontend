@@ -2,7 +2,7 @@ import React from 'react';
 
 const WineItem = ({ wine }) => {
   return (
-    <div className="m-4 p-4 flex-col justify-center text-center shadow-xl bg-slate-100 rounded-2xl">
+    <div className="m-4 p-4 flex-col justify-center text-center shadow-xl bg-slate-50 rounded-2xl">
       <img
         src={wine.image}
         alt={wine.name}
